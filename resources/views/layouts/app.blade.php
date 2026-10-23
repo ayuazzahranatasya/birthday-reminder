@@ -3,15 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>Birthday Reminder</title>
-
+    
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    
     <style>
-        :root { --primary: #5D688A; --secondary: #F7A5A5; --accent: #FFDBB6; --background: #FFF2EF; --text: #333333; --white: #FFFFFF; }
-        body { margin: 0; font-family: "Poppins", sans-serif; background-color: var(--background); color: var(--text); }
+        :root {
+            --primary: #5D688A;
+            --secondary: #F7A5A5;
+            --accent: #FFDBB6;
+            --background: #FFF2EF;
+            --text: #333333;
+            --white: #FFFFFF;
+        }
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background-color: var(--background);
+            color: var(--text);
+        }
         .login-content { min-height: 100vh; width: 100%; }
         .auth-page { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 40px; background: var(--background); }
         .auth-card { width: 100%; max-width: 1050px; min-height: 600px; display: flex; overflow: hidden; background: var(--white); border-radius: 28px; box-shadow: 0 15px 40px rgba(93, 104, 138, 0.15); }
@@ -30,7 +41,6 @@
         .auth-button:hover { background: var(--primary); color: white; }
         .auth-link { color: var(--primary); text-decoration: none; font-weight: 500; }
         .auth-link:hover { color: var(--secondary); }
-
         @media (max-width: 768px) {
             .auth-card { flex-direction: column; }
             .auth-left, .auth-right { width: 100%; padding: 35px; }
